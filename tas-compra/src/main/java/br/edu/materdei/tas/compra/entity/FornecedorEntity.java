@@ -1,4 +1,3 @@
-
 package br.edu.materdei.tas.compra.entity;
 
 import br.edu.materdei.tas.core.entity.Pessoa;
@@ -8,9 +7,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "fornecedor")
-public class FornecedorEntity extends Pessoa{
-    @Column(length = 14, nullable = false)
+public class FornecedorEntity extends Pessoa {
+    @Column(length = 50)
     private String contato;
+    
+    @Column(length = 14, nullable = false)
     private String cnpj;
 
     /**
